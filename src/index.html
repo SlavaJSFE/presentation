@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Mongo DB</title>
+</head>
+<body>
+  <!-- <div class="reveal">
+    <div class="slides">
+      <section>
+        <img class="mongodb-logo" src="assets/mongodb-logo.png" alt="mongodb-logo">
+      </section>
+      <section>
+        <section>
+          <h3>What is MongoDB?</h3>
+        </section>
+        <section>
+          <h3>MongoDB</h3>
+          <ul>
+            <li>cross-platform</li>
+            <li>open source</li>
+            <li>NoSQL</li>
+            <li>document-oriented</li>
+          </ul>
+          <p>database management system (DBMS)</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>History</h3>
+          <p id="history">2007 - 10gen software company began developing MongoDB</p>
+          <p id="history">2009 - it was shifted to an open-source development model</p>
+          <p id="history">2013 - 10gen changed its name to MongoDB Inc</p>
+          <p id="history">2017 - MongoDB became a publicly traded company, listed on NASDAQ as MDB with an IPO price of $24 per share</p>
+          <p id="history">2019 - MongoDB teamed up with Alibaba Cloud, who will offer its customers a MongoDB as a service solution</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>NoSQL</h3>
+          <p>NoSQL (not only SQL) - non-relational database that stores and accesses data using key-values. Instead of storing data in rows and columns like a traditional database, a NoSQL DBMS stores each item individually with a unique key</p>
+        </section>
+        <section>
+          <h3>Critical differences</h3>
+          <div id="sql-nosql">
+            <div class="sql">
+              <h4>SQL</h4>
+              <ol>
+                <li>relational</li>
+                <li>use structured query language and have a predefined schema</li>
+                <li>vertically scalable</li>
+                <li>table based</li>
+                <li>are better for multi-row transactions</li>
+              </ol>
+            </div>
+            <div class="no-sql">
+              <h4>NoSQL</h4>
+              <ol>
+                <li>non-relational</li>
+                <li>have dynamic schemas for unstructured data</li>
+                <li>horizontally scalable</li>
+                <li>document, key-value, graph or wide-column stores</li>
+                <li>are better for unstructured data like documents or JSON</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h4>compare a conventional table with document-based objects</h4>
+          <img src="assets/relational_vs_doc1.png" alt="sql-nosql">
+        </section>
+        <section>
+          <h3>NoSQL types</h3>
+          <img src="assets/no-sql-types.png" alt="NoSQL types">
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Document-oriented database</h3>
+          <p>it's a type of nonrelational database that is designed to store and query data as JSON-like documents</p>
+        </section>
+        <section>
+          <h3>JSON-like documents</h3>
+          <img src="assets/json-format-data.png" alt="json-format">
+        </section>
+        <section>
+          <h3>Data types available for storing</h3>
+          <div id="data-types">
+            <div>
+              <ul>
+                <li>String</li>
+                <li>Integer</li>
+                <li>Boolean</li>
+                <li>Double</li>
+                <li>Min/ Max keys</li>
+                <li>Arrays</li>
+                <li>Timestamp</li>
+                <li>Object</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Null</li>
+                <li>Symbol</li>
+                <li>Date</li>
+                <li>Object ID</li>
+                <li>Binary data</li>
+                <li>Code</li>
+                <li>Regular expression</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Collections</h3>
+          <p>MongoDB stores documents in collections. Collections are analogous to tables in relational databases.</p>
+          <img src="assets/collections.svg" alt="collections">
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Strengths and weaknesses of MongoDB</h3>
+          <div id="stren-weak">
+            <div>
+              <h4>Strengths</h4>
+              <ul>
+                <li>Scalability</li>
+                <li>Flexibility</li>
+                <li>Replication and High Availability</li>
+                <li>High speed and performance</li>
+                <li>Rich query capabilities</li>
+                <li>Sharding</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Weaknesses</h4>
+              <ul>
+                <li>Joins not Supported</li>
+                <li>High Memory Usage</li>
+                <li>No internal transaction support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Where MongoDB is used</h3>
+          <div id="where-use">
+            <div>
+              <ul>
+                <li>E-Commerce type of product-based applications</li>
+                <li>Blog and Content Management systems</li>
+                <li>High Speed logging, caching etc in the Real time</li>
+                <li>Need to maintain location wise Geospatial data</li>
+                <li>For maintains data related to the Social and Networking types</li>
+                <li>If application is a loosely coupled mechanism – means design may change at any point of time.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>What companies use MongoDB</h3>
+          <div id="brands">
+            <div>
+              <ul>
+                <li>Castlight Health</li>
+                <li>IBM</li>
+                <li>Citrix</li>
+                <li>Twitter</li>
+                <li>T-Mobile</li>
+                <li>Zendesk</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>BrightRoll</li>
+                <li>Sony</li>
+                <li>Foursquare</li>
+                <li>HTC</li>
+                <li>InVision</li>
+                <li>Intercom etc.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div> -->
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-color="rgb(70, 70, 255)" data-markdown>
+        ## Agile Methodology
+      </section>
+      <section data-background-color="rgb(172, 193, 47)" data-markdown>
+        ## Agile Methodology
+        * Agile is a software development methodology.
+
+        * A methodology is a set of practices and guidelines.
+
+      </section>
+      <section data-background-color="rgb(252, 236, 201)" data-markdown>
+        ### The Manifesto for Agile Software Development
+
+        * Individuals and interactions over processes and tools
+        * Working software over comprehensive documentation
+        * Customer collaboration over contract negotiation
+        * Responding to change over following a plan
+                  
+      </section>
+      <section data-background-color="rgb(252, 176, 179)" data-markdown>
+        ## Waterfall?!?
+
+        * Long development cycle
+        * Not flexible
+        * Delayed feedback
+
+      </section>
+      <section data-background-color="rgb(249, 57, 67)" data-markdown>
+        ## A Cross-Functional Team
+        * The team have all the skills
+        * No need for external help
+      </section>
+      <section data-background-color="rgb(126, 178, 221)" data-markdown>
+        ## Sprint
+        * Usually 2-4 weeks long
+        * Features are scoped and delivered
+      </section>
+      <section data-background-color="rgb(68, 94, 147)" data-markdown>
+        ## Backlog
+        * All future tasks
+        * Prioritized
+        * Managed by the team
+      </section>
+      <section data-background-color="rgb(251, 177, 60)" data-markdown>
+        ## Points
+        * Each task is estimated in points
+        * The whole team need to agree on points
+      </section>
+      <section data-background-color="rgb(254, 104, 71)" data-markdown>
+        ## Hard to Estimate?
+        * Tasks go back to *backlog* if no clarity
+        * Discuss in the meetings
+      </section>
+      <section data-background-color="rgb(87, 184, 255)" data-markdown>
+        ## Daily Stand-up Meetings
+        * What we are working on
+        * What blockers we have
+        * Introductions, announcements, farewells
+      </section>
+      <section data-background-color="rgb(209, 0, 0)" data-markdown>
+        ## Retro
+        * What worked
+        * What didn't work
+        * What to improve
+      </section>
+      <section data-background-color="rgb(70, 70, 255)">
+        Good Luck!
+      </section>
+    </div>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
